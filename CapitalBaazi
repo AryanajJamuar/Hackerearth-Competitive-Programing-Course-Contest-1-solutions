@@ -1,0 +1,27 @@
+#include <iostream>
+#include <cmath> 
+#include <algorithm>
+#include <vector>
+#include <bits/stdc++.h>
+using namespace std ;
+
+typedef long long int ll ;
+ll n = 1e5 ;
+int main()
+{ string s ;
+ getline(cin, s);
+ string q ;
+ for(int i=0;i<s.size();i++)
+ {   if(s[i]==' ')
+       {cout<<q<<"\n" ;
+	   q.clear() ;
+	   continue ;
+	   }
+	 if(s[i]>='a' and s[i]<='z')
+      s[i] = s[i] - 32 ;
+     q.push_back(s[i]) ;
+
+ }
+ cout<<q<<"\n" ;
+    return 0;
+}
